@@ -6,7 +6,7 @@ from datetime import datetime
 import pickle
 
 
-filename = 'finalized_model (1).sav'
+filename = 'finalized_model.sav'
 model = pickle.load(open(filename, 'rb'))
 encodeListKnown, className = model[0], model[1]
 cap = cv2.VideoCapture(0)
